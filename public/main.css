@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Parisienne);
+
+/* General */
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+	background-color: #f5f5f5 ;
+}
+
+.header-background {
+	display: inline-block;
+}
+
+.parallax-heading {
+	margin-top: 12rem;
+	color: #D4EEFF;
+	letter-spacing: 2px;
+}
+
+.parallax-sub-heading {
+	color: white;
+	letter-spacing: -2px;
+	font-weight: 600;
+}
+
+/* Typography */
+
+
+h1 span {
+	font-size: 5rem;
+	font-variant: small-caps;
+}
+
+blockquote  {
+	margin-left: 1rem;
+}
+
+#projects {
+	color: #333;
+}
+
+#dropdown-menu {
+	background-color: #333;
+}
+
+#skills-btn:hover {
+	background-color: #26a69a;
+}
+
+#edu-btn {
+	background-color: red;
+}
+
+#my-name {
+	position: absolute;
+	margin-left: 8rem;
+}
+
+.handwriting {
+	font-family: 'Parisienne', cursive;
+	font-size: 2rem;
+	color: #333;
+}
+
+.material-icons {
+	color: #333;
+}
+
+
+#about-btn {
+	background-color: #1e88e5;
+}
+/* Parallax */
+
+#top-img {
+	background: url('img/pic.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;		
+}
+
+.nav-wrapper {
+	background-color: #fff;
+}
+
+.hide-on-med-and-down li {
+	background-color: #fff;
+}
+
+
+/*Cards*/
+
+.card-title {
+	font-family: arial;
+}
+
+.panel {
+	background-color: #fff;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.right-btn {
+	display: inline-block;
+	background-color: #333;
+}
+
+.right-btn:hover {
+	background-color: black;
+}
+
+.left-btn {
+	display: inline-block;
+	background-color: #1e88e5;
+}
+
+.left-btn:hover {
+	background-color: #0d47a1;	
+}
+
+#logo-img {
+	margin-left: 1rem;
+	margin-top: .5rem;
+	height: 3rem;
+	width: 3rem;
+}

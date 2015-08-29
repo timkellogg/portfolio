@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="title" content="Kellogg Web Studio">
+  <meta name="description" content="A Portland Oregon web design and development company">
+  <title>Tim Kellogg | Portfolio</title>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<%= url('/main.css') %>">
+</head>
+<body>  
+  <div id="site-wrapper">
+  <div id="navbar-wrapper"> 
+    <nav class="z-depth-2">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo"><img id="logo-img" class="circle z-depth-1" src="img/me.jpg"></a>
+        <span id="my-name" class="handwriting">Tim Kellogg</span>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <a id="dropdown-menu" class='dropdown-button btn' href='#' data-activates='projects-menu'>Projects</a>
+          <a id="about-btn" class="dropdown-button btn modal-trigger" href="#about">About</a>
+          <a id="skills-btn" class="dropdown-button btn" href="#skills">Skills</a>
+          <a id="edu-btn" class="dropdown-button btn" href="#education">Education</a>
+          <ul id='projects-menu' class='dropdown-content'>
+            <li><a href="#projects">Websites</a></li>
+            <li><a href="#scripts">Scripts</a></li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+    <div id="about" class="modal">
+      <div class="modal-content">
+        <h4>Hi! I'm Tim,</h4>
+        <p>Welcome to my site!  I am a web developer currently studying at <a hre="http://www.epicodus.com/">Epicodus</a>, which is a full time programming school that covers Ruby on Rails, JavaScript, and Emberjs. We practice pair programming everyday and make several projects a week.</p>
+
+        <p>Before that, I studied international relations and politics for my Bachelors and Masters. I worked in Congress, for two think Tanks and for a lobbying firm. I was drawn to programming when I was writing my masters that dealt with the role of internet media in influencing elections. I started programming during my free time and before I know it, I was at Epicodus!</p>
+
+        <p>I love programming because I get to <em>build ideas</em>. I love trying to find solutions to problems and then figuring out an even better solution. I'm always ready for another challenge.</p> 
+
+        <p>Connect with me on <a href="https://www.linkedin.com/in/kelloggtim">LinkedIn!</a></p>
+        <p>Follow me on <a href="https://github.com/timkellogg">Github</a></p>
+      </div>
+      <div class="modal-footer center-align">
+        <a href="#!" class=" modal-action modal-close waves-effe  ct waves-green btn-flat">Back</a>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      
+      <%= yield %>
+    </div>
+  </div>
+  <script>
+    var options = [
+    { selector: '.project-1', offset: 50, callback: 'Materialize.fadeInImage("#card-1")'  },
+    { selector: '.project-2', offset: 100, callback: 'Materialize.fadeInImage("#card-2")' },
+    { selector: '.project-3', offset: 150, callback: 'Materialize.fadeInImage("#card-3")' },
+    { selector: '.project-4', offset: 250, callback: 'Materialize.fadeInImage("#card-4")' }
+  ];
+  Materialize.scrollFire(options);
+
+    $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+     
+  </script>
+</body>
+</html>
