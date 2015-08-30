@@ -103,7 +103,6 @@ blockquote  {
 
 /* Nav */
 /*mobile*/
-
 #mobile-dropdown-menu:hover,
 #mobile-about-btn:hover,
 #mobile-contact-btn:hover,
@@ -157,3 +156,13 @@ blockquote  {
 	height: 3rem;
 	width: 3rem;
 }
+
+.large-card-content {
+	text-align: center;
+	background-color: #FFFAFA;
+}
+
+.large-card-content .card-title {
+	font-size: 1.8rem;
+}
+
