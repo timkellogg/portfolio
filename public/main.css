@@ -46,7 +46,7 @@ blockquote  {
 	background-color: #333;
 }
 
-#skills-btn:hover {
+#contact-btn:hover {
 	background-color: #26a69a;
 }
 
@@ -81,6 +81,24 @@ blockquote  {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;		
+}
+
+#edu-img {
+	max-height: 20rem;
+	background: url('img/edubackground.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;			
+}
+
+#contact-img {
+	max-height: 20rem;
+	background: url('img/contact.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;				
 }
 
 .nav-wrapper {
