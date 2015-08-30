@@ -3,7 +3,7 @@ Bundler.require :default
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each { |file| require file }
 
 before do
-  cache_control :public, :must_revalidate, :max_age => 60
+  cache_control :public, :must_revalidate, :max_age => 36000
 end
 
 get '/' do 
