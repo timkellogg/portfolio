@@ -19,7 +19,21 @@
       <div class="nav-wrapper">
         <a href="/" class="brand-logo"><img id="logo-img" class="circle z-depth-1" src="img/me.jpg"></a>
         <span id="my-name" class="handwriting">Tim Kellogg</span>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="side-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <!-- Displays on Mobile/Tablets -->
+        <ul class="side-nav" id="side-menu">
+          <a id="dropdown-menu" class='dropdown-button btn' href='#' data-activates='projects-menu'>Projects</a>
+          <a id="about-btn" class="dropdown-button btn modal-trigger" href="#about">About</a>
+          <a id="contact-btn" class="dropdown-button btn" href="#contact">Contact</a>
+          <a id="edu-btn" class="dropdown-button btn" href="#education">Education</a>
+          <ul id='projects-menu' class='dropdown-content'>
+            <li><a href="#projects">Websites</a></li>
+            <li><a href="#scripts">Scripts</a></li>
+          </ul>
+        </ul>
+
+        <!-- Displayed on Desktops -->
         <ul class="right hide-on-med-and-down">
           <a id="dropdown-menu" class='dropdown-button btn' href='#' data-activates='projects-menu'>Projects</a>
           <a id="about-btn" class="dropdown-button btn modal-trigger" href="#about">About</a>
