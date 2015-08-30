@@ -101,6 +101,17 @@ blockquote  {
   background-size: cover;				
 }
 
+/* Nav */
+/*mobile*/
+
+#mobile-dropdown-menu:hover,
+#mobile-about-btn:hover,
+#mobile-contact-btn:hover,
+#mobile-edu-btn:hover {
+	background-color: darkblue;
+	color: #fff;
+}
+
 .nav-wrapper {
 	background-color: #fff;
 }
