@@ -14,7 +14,7 @@
 </head>
 <body>  
   <div id="site-wrapper">
-  <div id="navbar-wrapper"> 
+
     <nav class="z-depth-2">
       <div class="nav-wrapper">
         <a href="/" class="brand-logo"><img id="logo-img" class="circle z-depth-1" src="img/me.jpg"></a>
@@ -32,7 +32,7 @@
         </ul>
       </div>
     </nav>
-  </div>
+
 
     <div id="about" class="modal">
       <div class="modal-content">
@@ -61,6 +61,15 @@
 
     $(document).ready(function(){
       $('.modal-trigger').leanModal();
+      $('.dropdown-button').dropdown();
+      $(".button-collapse").sideNav();
+      // simulate anchor tags because of materialize issue 
+      $('#contact-btn').on("click", function() {
+        document.getElementById("contact").scrollIntoView();
+      });
+      $('#edu-btn').on("click", function() {
+        document.getElementById("education").scrollIntoView();
+      })
     });
      
 
